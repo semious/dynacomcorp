@@ -1,0 +1,26 @@
+@import url(prototype.css);
+/*-------override prototype-------------*/
+#main_col{padding:10px;width:753px;}
+
+/*---------priver class-------------------*/
+#main_col li{
+	padding-top:5px;
+	font-size:12px;
+	color:#000000;
+}
+
+#main_col li a{
+	color:#000000;
+	display:block;
+	zoom:1;
+}
+
+#main_col li a:hover{
+
+	font-weight:bold;
+}
+
+.item_head{
+	margin-right:10px;
+}
+

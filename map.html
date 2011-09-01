@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" File 4
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAgtTyQoxkxSjPPHfOsPA4QxQPU_rflTSuJX8-ijSQzj_PJbFEohQLsPsbtc6yF0BSJsc-tTi2o3-8Ag"
+type="text/javascript"></script>
+</head>
+<body>
+<div id="map" style="width: 500px; height: 400px"></div>
+<script type="text/javascript">
+var map = new GMap2(document.getElementById("map"));
+var coorsFieldPoint = new GLatLng(39.754286, -104.994637);
+map.setCenter(coorsFieldPoint, 16);
+map.addControl(new GLargeMapControl());
+map.addControl(new GMapTypeControl());
+map.setMapType(G_HYBRID_MAP);
+//create marker, add to map overlay
+var coorsFieldMarker = new GMarker(coorsFieldPoint);
+map.addOverlay(coorsFieldMarker);
+//create Info Window (html)
+var coorsFieldHtml = '<b>Dynacom Corp.</b>,<br /> Example Map Address ';
+coorsFieldMarker.openInfoWindowHtml(coorsFieldHtml);
+</script>
+</body>
+</html>
