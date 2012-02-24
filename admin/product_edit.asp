@@ -28,7 +28,7 @@ if edit = "delete" then
 		response.Write("<script>alert('sorry£¬a menu named "+trim(cstr(rs("name")))+" has this product which you want to delete,so you must remove this product from this menu first£¡');history.back(-1);</script>")
 		response.End()
 	else
-		sql = "delete from product where id = '" + id + "'"
+		sql = "delete from product where id = " & id
 		conn.execute sql
 		response.Write("<div style='margin:50px 0 0 200px;font-weight:bold;'>Product has been deleted.</div>")
 		response.End()

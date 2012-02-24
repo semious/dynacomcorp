@@ -150,7 +150,7 @@ function goUrl(obj){
 									</li>
 								</ul>
 							</div>
-							<%
+    <%
 								dim intro
 								intro = replace(unescape(rs1("intro")),"<pre>","")
 								intro = replace(intro,"</pre>","")
@@ -195,357 +195,49 @@ function goUrl(obj){
 				%>
 				<table cellpadding="5" style="font-size:14px" width="600">
 					<tr>
-						<td width="50%" style="text-align:center" height="147">
-						<%
-							rs1.open "select * from cat where id = 86",conn
-							if not rs1.eof then
-						%>
-                        <p>
-                            <img border="0" src="images/CommonInserts.jpg" width="125" height="100">
-                        </p>
-                        <p>
-                            Modular Inserts
-                        </p>
-                        <p>
-                            <select onChange="goUrl(this);" style="width:150px;">
-                                <option value=" ">Please choose one item</option>
-								<%
-									dim temp
-                                    if rs1("dncat")<>"0" then
-                                        ary = split(rs1("dncat"),"|")
-                                        for i = lbound(ary) to ubound(ary)
-											if len(ary(i)) = 0 then
-												temp = -9999
-											else
-												temp = ary(i)
-											end if
-                                            rs2.open "select * from cat where id = " & temp,conn
-                                            if not rs2.eof then
-                                            %>
-                             	<option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%></option>
-                                            <%
-                                            end if
-                                            rs2.close
-                                        next
-                                    end if
-                                %>
-                            </select>
-                        </p>						
-						<%
-						end if
-						rs1.close
-						%>
-							</td>
-							<td width="50%" style="text-align:center" height="238">
-							<%
-							rs1.open "select * from cat where id = 78",conn
-							if not rs1.eof then
-							%>
-							<p><img src="images/RJXconnect.jpg" height="100" /></p>
-							<p>RJ-Style Cross-Connect Systems</p>
-							<p><select onChange="goUrl(this);" style="width:150px;"><option value=" ">Please choose one item</option>
-							<%
-								if rs1("dncat")<>"0" then
-									ary = split(rs1("dncat"),"|")
-									for i = lbound(ary) to ubound(ary)
-										if len(ary(i)) = 0 then
-											temp = -9999
-										else
-											temp = ary(i)
-										end if
-										rs2.open "select * from cat where id = " & temp ,conn
-										if not rs2.eof then
-											%><option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%></option><%
-										end if
-										rs2.close
-									next
-								end if
-							%>
-							</select></p>
-							<%
-							end if
-							rs1.close
-							%>		
-							</td>
-						</tr>
+						<td width="50%" style="text-align:center" height="233"><p><a href="category.asp?cid=86"><img border="0" src="images/Voice_&_Data_Jack_Collage.jpg" width="200" height="150"></a> </p>
+<p>
+                            <a href="category.asp?cid=86">Voice & Data Jacks </a></p>
+<p><a href="category.asp?cid=86">and </a><a href="category.asp?cid=86">Related Tools</a></p></td>
+							<td width="50%" style="text-align:center" height="233"><p><a href="category.asp?cid=80"><img src="images/Wallplate_&_Surface_Box_Collage.jpg" width="200" height="150" /></a></p>
+							  <p><a href="category.asp?cid=80">Wallplates, Surface Boxes,</a></p>
+							  <p><a href="category.asp?cid=80">&amp; Mounting Boxes</a></p>				      </td>
+				  </tr>
 					<tr>
-						<td width="50%" style="text-align:center" height="238">
-						<%
-						rs1.open "select * from cat where id=80",conn
-						if not rs1.eof then
-						%>	
-							<p><img src="images/Wallplates&SurfaceBoxes.jpg" height="100" /></p>
-							<p><%=rs1("name")%></p>
-							<p>
-							<select onChange="goUrl(this);" style="width:150px;">
-								<option value=" ">Please choose one item</option>
-								<%
-								if rs1("dncat")<>"0" then
-									ary = split(rs1("dncat"),"|")
-									for i = lbound(ary) to ubound(ary)
-										if len(ary(i)) = 0 then
-											temp = -9999
-										else
-											temp = ary(i)
-										end if
-										rs2.open "select * from cat where id = " & temp ,conn
-										if not rs2.eof then
-									%>
-								<option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%></option>
-									<%
-											end if
-											rs2.close
-									next
-								end if
-                    	%>
-							</select>
-							</p>
-						<%
-						end if
-						rs1.close
-						%>											
-						</td>
-						<td width="50%" style="text-align:center" height="238">
-						<%
-						rs1.open "select * from cat where id=79",conn
-						if not rs1.eof then
-						%>
-						<p>
-                        <img border="0" src="images/FiberXConnect.jpg" height="100"></p>
-                        <p>Fiber Optic Cross-Connect Systems</p>
-						<p><select onChange="goUrl(this);" style="width:150px;"><option value=" ">Please choose one item</option>
-							<%
-								if rs1("dncat")<>"0" then
-									ary = split(rs1("dncat"),"|")
-									for i = lbound(ary) to ubound(ary)
-										if len(ary(i)) = 0 then
-											temp = -9999
-										else
-											temp = ary(i)
-										end if
-										rs2.open "select * from cat where id = " & temp ,conn
-										if not rs2.eof then
-											%><option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%></option><%
-										end if
-										rs2.close
-									next
-								end if
-							%>
-							</select>
-						</p>
-						<%
-						end if
-						rs1.close
-						%>						
-                        </td>
-					</tr>
+						<td width="50%" style="text-align:center" height="211"><p>&nbsp;</p>
+						  <p><a href="category.asp?cid=78"><img src="images/RJ-Sytle_Cross-Connect_Collage.jpg" width="200" height="150" /></a></p>
+						  <p><a href="category.asp?cid=78">RJ-Style Cross-Connect Systems</a></p>
+					  <p>and Related Tools</p></td>
+					  <td width="50%" style="text-align:center" height="211"><p>&nbsp;
+                        </p>
+					    <p><a href="category.asp?cid=76"><img src="images/110-Style_Cross-Connect_Collage.jpg" width="200" height="150" /></a></p>
+					    <p><a href="category.asp?cid=76">110-Style Cross-Connect Systems </a></p>
+				      <p><a href="category.asp?cid=76">and Related Tools</a></p></td>
+				  </tr>
                     <tr>
                         <td width="50%" style="text-align:center" height="238">
 						<p>
-                        <img src="images/Flush&SurfaceJacks.jpg" height="100"/></p>
-						<p>Flush &amp; Surface Mount Jacks, etc.</p>
-						<p>
-							<select onChange="goUrl(this);" style="width:150px;">
-								<option value=" ">Please choose one item</option>
-								<option value="category.asp?cid=82">Wall Voice Jacks</option>
-								<option value="category.asp?cid=83">Surface Voice Jacks</option>
-							</select>
-						</p>						
-                        </td>
-						<td width="50%" style="text-align:center" height="238">						
-						<%
-						rs1.open "select * from cat where id=76",conn
-						if not rs1.eof then
-						%>
-						<p>
-							<img src="images/110-StyleXConnect.jpg" height="100" /></p>
-							<p>110-Style Cross-Connect Systems</p>
-							<p>
-								<select onChange="goUrl(this);" style="width:150px;">
-									<option value=" ">Please choose one item </option>
-									<%
-									if rs1("dncat")<>"0" then
-										ary = split(rs1("dncat"),"|")
-										for i = lbound(ary) to ubound(ary)
-										if len(ary(i)) = 0 then
-											temp = -9999
-										else
-											temp = ary(i)
-										end if
-										rs2.open "select * from cat where id = " & temp ,conn
-											if not rs2.eof then
-												%>
-									<option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%></option>
-									<%
-											end if
-											rs2.close
-										next
-									end if
-								%>
-								</select>
-							</p>
-							<%
-							end if
-							rs1.close
-							%>
-                    	</td>
-					</tr>
+                          <a href="category.asp?cid=77"><img src="images/66-Style_Cross-Connect_Collage.jpg" width="200" height="150" /></a></p>
+						<p><a href="category.asp?cid=77">66-Style Cross-Connect Systems</a> </p>
+					  <p>and Related Tools</p></td>
+						<td width="50%" style="text-align:center" height="238"><a href="category.asp?cid=79"><img src="images/FIber_Optic_Collage.jpg" width="200" height="150" border="0" /></a>
+						  <p><a href="category.asp?cid=79">Fiber Optic Cross-Connect Systems</a></p>					  </td>
+				  </tr>
 					<tr>
 						<td width="50%" style="text-align:center" height="238">
-							<%
-							rs1.open "select * from cat where id=77",conn
-							if not rs1.eof then
-							%>
-							<p>
-								<img src="images/66StyleCrossConnect.jpg" height="100" />
-							</p>
-							<p>66-Style Cross-Connect Systems</p>
-							<p>
-								<select onChange="goUrl(this);" style="width:150px;">
-									<option value=" ">Please choose one item</option>
-								<%
-									if rs1("dncat")<>"0" then
-										ary = split(rs1("dncat"),"|")
-										for i = lbound(ary) to ubound(ary)
-											if len(ary(i)) = 0 then
-												temp = -9999
-											else
-												temp = ary(i)
-											end if
-											rs2.open "select * from cat where id = " & temp ,conn
-											if not rs2.eof then
-												%>
-									<option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%>
-									</option>
-								<%
-											end if
-											rs2.close
-										next
-									end if
-								%>
-								</select>
-							</p>
-							<%
-							end if
-							rs1.close
-							%>				
-						</td>
-						<td width="50%" style="text-align:center" height="238">
-												<%
-						rs1.open "select * from cat where id=100",conn
-						if not rs1.eof then
-						%>
-						<p><img src="images/Cable&Termination.jpg" height="100" /></p>
-						<p>
-							<%=rs1("name")%>
-						</p>
-						<p>
-							<select onChange="goUrl(this);" style="width:150px;">
-									<option value=" ">Please choose one item</option>
-									<%
-									if rs1("dncat")<>"0" then
-										ary = split(rs1("dncat"),"|")
-										for i = lbound(ary) to ubound(ary)
-											if len(ary(i)) = 0 then
-												temp = -9999
-											else
-												temp = ary(i)
-											end if
-											rs2.open "select * from cat where id = " & temp ,conn
-											if not rs2.eof then
-									%>
-									<option value="category.asp?cid=<%=rs2("id")%>"><%=rs2("name")%></option>
-									<%
-											end if
-											rs2.close
-										next
-									end if
-                               		%>
-                            </select>
-						</p>
-						<%
-						end if
-						rs1.close
-						%>
-						</td>
+							<p><a href="category.asp?cid=124"><img src="images/Rack_Accessories_Brackets_&_Harware_Collage.jpg" width="200" height="150" /></a></p>
+						  <p><a href="category.asp?cid=124">Rack Accessories, Wall Brackets</a><a href="category.asp?cid=124">, </a></p>
+						  <p>J-Hooks, <a href="category.asp?cid=124">and   Hardware</a> </p>
+					  </td>
+						<td width="50%" style="text-align:center" height="238"><p><a href="category.asp?cid=182"><img src="images/Voice_Connectivity_Collage.jpg" width="200" height="150" /></a></p>
+				  <p><a href="category.asp?cid=182">Couplers & Tees, Integrated Wallplates</a>,</p>
+				  <p><a href="category.asp?cid=182">Mod. Plugs, and Related Tools</a></p></td>
 					</tr>
 					<tr>
-                        <td width="50%" style="text-align:center" height="238">
-<%
-						rs1.open "select * from cat where id=124",conn
-						if not rs1.eof then
-						%>
-						<p><img src="images/Shelves&Brackets.jpg" height="100" /></p>
-						<p>Shelve,&nbsp; Wall Brackets, etc.</p>
-						<p>
-							<select onChange="goUrl(this);" style="width:150px;">
-								<option value=" ">Please choose one item</option>
-								<%
-								if rs1("dncat")<>"0" then
-									ary = split(rs1("dncat"),"|")
-									for i = lbound(ary) to ubound(ary)
-										if len(ary(i)) = 0 then
-											temp = -9999
-										else
-											temp = ary(i)
-										end if
-										rs2.open "select * from cat where id = " & temp ,conn
-										if not rs2.eof then
-									%>
-								<option value="category.asp?cid=<%=rs1("id")%>#<%=rs2("name")%>"><%=rs2("name")%></option>
-									<%
-										end if
-										rs2.close
-									next
-								end if
-                                %>
-							</select>
-							</p>
-							<%
-							end if
-							rs1.close
-							%>						
-                        </td>
-             			<td width="50%" style="text-align:center" height="238">
-                        <%
-						rs1.open "select * from cat where id=99",conn
-						if not rs1.eof then
-						%>
-						<p>
-                            <img src="images/F14 Wired.jpg" height="100" />
-                        </p>
-                        <p>
-                            <%=rs1("name")%>
-                        </p>
-                        <p>
-                            <select onChange="goUrl(this);" style="width:150px;">
-                                <option value=" ">Please choose one item</option>
-								<%
-                                    if rs1("dncat")<>"0" then
-                                        ary = split(rs1("dncat"),"|")
-                                        for i = lbound(ary) to ubound(ary)
-											if len(ary(i)) = 0 then
-												temp = -9999
-											else
-												temp = ary(i)
-											end if
-											rs2.open "select * from cat where id = " & temp ,conn
-                                            if not rs2.eof then
-                                            %>
-                             	<option value="category.asp?cid=<%=rs2("id")%>"><%=rs2("name")%></option>
-                                            <%
-                                            end if
-                                            rs2.close
-                                        next
-                                    end if
-                                %>
-                            </select>
-                        </p>
-						<%
-						end if
-						rs1.close
-						%>
-						</td>
+                        <td width="50%" style="text-align:center" height="238"><a href="category.asp?cid=168"><img src="images/Audio_Video_Collage.jpg" width="200" height="150"/></a>
+                      <p><a href="category.asp?cid=168">Audio-Video Modular Inserts</a></p>                      </td>
+       			    <td width="50%" style="text-align:center" height="238"><p>                      <a href="category.asp?cid=179"><img src="images/Residential_Collage.jpg" width="200" height="150" /></a> </p>
+                  <p><a href="category.asp?cid=179">Residential Cross-Connect Systems</a></p>                  </td>
 					</tr>
 				</table>
 				<%
@@ -585,18 +277,18 @@ function goUrl(obj){
 								rs2.close
 							end if
 							if rs1("menu3")<>"" then
-								rs2.open "select * from product where id="+cstr(rs1("menu3"))+"",conn
+								rs2.open "select * from cat where id="+cstr(rs1("menu3"))+"",conn
 								if not rs2.eof then
-										%><a href="product.asp?pid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a href="product.asp?pid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+										%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
 							if rs1("menu4")<>"" then
-								rs2.open "select * from product where id="+cstr(rs1("menu4"))+"",conn
+								rs2.open "select * from cat where id="+cstr(rs1("menu4"))+"",conn
 								if not rs2.eof then
-										%><a href="product.asp?pid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a href="product.asp?pid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+										%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if

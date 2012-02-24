@@ -8,7 +8,7 @@
 				</div>
 			</form>
 			</div>
-			<div id="menu1" class="menu" style="display:none;">
+			<div id="menu1" class="menu" >
 				<div class="search_title">Search Product by Type</div>
 				<div class="menu_main">
 				<ul>
@@ -27,7 +27,13 @@
 				if not rs1.eof then
 					ary=split(cstr(trim(rs1("dncat"))),"|")
 					for i=lbound(ary) to ubound(ary)
-						rs2.open "select * from cat where id='"+ary(i)+"'",conn
+						dim uid
+						if len(ary(i)) = 0 then
+							uid = -9999
+						else
+							uid = ary(i)
+						end if
+						rs2.open "select * from cat where id = " & uid,conn
 						if not rs2.eof then
 							while not rs2.eof
 								%>
@@ -35,9 +41,15 @@
 								<ul style="display:none">
 								<%
 									if trim(rs2("dncat"))<>"" then
-										ary1=split(cstr(trim(rs2("dncat"))),"|")
+										ary1=split(cstr(trim(rs2("dncat"))),"|")									
 										for j=lbound(ary1) to ubound(ary1)
-											rs3.open "select * from cat where id='"+ary1(j)+"'",conn
+											dim uuid
+											if len(ary1(j)) = 0 then
+												uuid = -9999
+											else
+												uuid = ary1(j)
+											end if	
+											rs3.open "select * from cat where id = " & uuid , conn
 											if not rs3.eof then
 												while not rs3.eof
 													%>
@@ -82,11 +94,11 @@
 					<li>
 						<a href="javascript:;" class="a_show_cat">Cat6 Cable Test Results</a>
 						<ul style="display:none;">
-							<li style="font-size:12px;text-align:left;"><a href="pdf/Cat6 Permanent Link Test for ABA Elite1000X 400CMR Cable + Dynacom Component Compliant Connectivity.pdf" >ABA Elite1000X Cat6 UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permanent Link Test for LS C6 250CMR Cable + Dynacom Component Compliant Connectivity.pdf" >LS Cat6 UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permanent Link Test for Mohawk Cat6CMR + Dynacom Component Complient Connectivity.pdf" >Mohawk Cat6 UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permanent Link Test for WaveNet 550CMR + Dynacom Component Compliant Connectivity.pdf">WaveNet Cat6E UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permenant Link Test for Media Max Cable + Dynacom Component Compliant Connectivity.pdf">Media Max Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left;"><a href="pdf/Permanent Link Test for ABA Elite1000X 400CMR.pdf" >ABA Elite1000X Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permanent Link Test for LS 250CMR.pdf" >LS Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permanent Link Test for Mohawk C6CMR.pdf" >Mohawk Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permanent Link Test for WaveNet 550CMR.pdf">WaveNet Cat6E UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permenant Link Test for Media Max C6CMR.pdf">Media Max Cat6 UTP</a></li>
 
 
 						</ul>
@@ -101,7 +113,7 @@
 				<div class="menu_main">						
 				<ul>
 					<li style="font-size:12px;margin:0 0 0 10px;">
-						<a href="product.asp?pid=503" style="text-decoration:none;" target="_blank"><img src="images/3190.a.jpg" width="150" height="150" /><br />KwikTool & KwikJacks</a>
+						<a href="product.asp?pid=503" style="text-decoration:none;" target="_blank"><img src="http://youtu.be/GrgxesWqGP0" width="150" height="150" /><br />KwikTool & KwikJacks</a>
 					</li>
 				</ul>
 				</div>

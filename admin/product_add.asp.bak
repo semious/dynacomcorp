@@ -124,7 +124,7 @@ function validate(){
 				dim i
 				dim j
 				set rs=server.createobject("adodb.recordset")
-				rs.open "select * from cat where rank = '2'",conn
+				rs.open "select * from cat where rank=2",conn
 				if not rs.eof then
 					%><select name="menu1" style="width:150px;"><%
 					while not rs.eof 
@@ -138,7 +138,7 @@ function validate(){
 					<br />
 					related menu2(opt.):
 				<%
-				rs.open "select * from cat where rank = '2'",conn
+				rs.open "select * from cat where rank=2",conn
 				if not rs.eof then
 					%><select name="menu2" style="width:150px;"><%
 					while not rs.eof 
@@ -153,7 +153,7 @@ function validate(){
 				<td colspan="2" style="border:1px #000000 solid;">
 					related menu3(opt.):
 					<%
-					rs.open "select * from cat where rank = '2'",conn
+					rs.open "select * from cat where rank=2",conn
 					if not rs.eof then
 						%><select name="menu3" style="width:150px;"><%
 						while not rs.eof 
@@ -167,7 +167,7 @@ function validate(){
 					<br />
 					related menu4(opt.):
 					<%
-					rs.open "select * from cat where rank = '2'",conn
+					rs.open "select * from cat where rank=2",conn
 					if not rs.eof then
 						%><select name="menu4" style="width:150px;"><%
 						while not rs.eof 

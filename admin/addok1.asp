@@ -1,4 +1,4 @@
-<!--#include file="conn.asp"-->
+!--#include file="conn.asp"-->
 <!--#include file="IsAdmin.asp" -->
 
 

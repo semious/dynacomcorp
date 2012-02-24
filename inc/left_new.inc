@@ -1,14 +1,18 @@
 			<div id="search_frame">
-			<form action="search.asp">
-				<div id="search">Quick Search:<br />
-					<input type="text" size="16" name="words" style="border:1px solid #7f9db9;" />&nbsp;&nbsp;&nbsp;<input type="submit" value="Go!"/>
-					<ul style="margin-top:5px;">
-						<li><a href="sheets.asp">Parts Index/Spec. Sheets</a></li>
-					</ul>
+			    <form action="search.asp">
+				<div id="search">
+					<div class="search_title" style="text-align:left">Quick Product Search:</div>
+					<div class="menu_main" style="padding:0 0 0 10px;width:190px;">
+                        <input type="text" size="16" name="words" style="border:1px solid #7f9db9;" />&nbsp;&nbsp;&nbsp;<input type="submit" value="Go!"/>
+                        <ul style="margin-top:5px;">
+                            <li style="margin-left:-7px;"><a href="sheets.asp">Parts Index/Spec. Sheets</a></li>
+                        </ul>
+					</div>
+					<div class="menu_bottom"></div>
 				</div>
 			</form>
 			</div>
-			<div id="menu1" class="menu" style="display:none;">
+            <!--			<div id="menu1" class="menu" >
 				<div class="search_title">Search Product by Type</div>
 				<div class="menu_main">
 				<ul>
@@ -33,7 +37,6 @@
 						else
 							uid = ary(i)
 						end if
-						response.write("select * from cat where id = " & uid)
 						rs2.open "select * from cat where id = " & uid,conn
 						if not rs2.eof then
 							while not rs2.eof
@@ -77,6 +80,23 @@
 				</ul>
 				</div>
 				<div class="menu_bottom"></div>
+			</div>-->
+			<div id="menu6" class="menu">
+				<div class="search_title">Dynacom Community</div>
+				<div class="menu_main">
+				<ul>
+					<li>
+						<a href="#">Contractor Registration</a>
+					</li>
+					<li>
+						<a href="#">Rewards Program</a>
+					</li>
+					<li>
+						<a href="#">Like Us <img align="bottom" src="images/likeus.gif"/></a>
+					</li>
+				</ul>
+				</div>
+				<div class="menu_bottom"></div>
 			</div>
 
 			<div id="menu4" class="menu">
@@ -95,13 +115,11 @@
 					<li>
 						<a href="javascript:;" class="a_show_cat">Cat6 Cable Test Results</a>
 						<ul style="display:none;">
-							<li style="font-size:12px;text-align:left;"><a href="pdf/Cat6 Permanent Link Test for ABA Elite1000X 400CMR Cable + Dynacom Component Compliant Connectivity.pdf" >ABA Elite1000X Cat6 UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permanent Link Test for LS C6 250CMR Cable + Dynacom Component Compliant Connectivity.pdf" >LS Cat6 UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permanent Link Test for Mohawk Cat6CMR + Dynacom Component Complient Connectivity.pdf" >Mohawk Cat6 UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permanent Link Test for WaveNet 550CMR + Dynacom Component Compliant Connectivity.pdf">WaveNet Cat6E UTP</a></li>
-							<li style="font-size:12px;text-align:left"><a href="pdf/Cat6 Permenant Link Test for Media Max Cable + Dynacom Component Compliant Connectivity.pdf">Media Max Cat6 UTP</a></li>
-
-
+							<li style="font-size:12px;text-align:left;"><a href="pdf/Permanent Link Test for ABA Elite1000X 400CMR.pdf" >ABA Elite1000X Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permanent Link Test for LS 250CMR.pdf" >LS Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permanent Link Test for Mohawk C6CMR.pdf" >Mohawk Cat6 UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permanent Link Test for WaveNet 550CMR.pdf">WaveNet Cat6E UTP</a></li>
+							<li style="font-size:12px;text-align:left"><a href="pdf/Permenant Link Test for Media Max C6CMR.pdf">Media Max Cat6 UTP</a></li>
 						</ul>
 					</li>				
 				</ul>
@@ -111,14 +129,9 @@
 
 			<div id="menu5" class="menu" style="width:200px;">
 				<div class="search_title">New Products</div>
-				<div class="menu_main">						
-				<ul>
-					<li style="font-size:12px;margin:0 0 0 10px;">
-						<a href="pdf/K Tool-K jack.pdf" style="text-decoration:none;" target="_blank"><img src="images/3190.a.jpg" width="150" height="150" /><br />KwikTool & KwikJacks</a>
-					</li>
-				</ul>
+				<div class="menu_main" style="text-align: center">
+			        <a href="http://youtu.be/wau7jqDHZ5c" target="_blank"><span class="video_play"></span><img style="border-radius: 5px;" width="180" src="http://img.youtube.com/vi/wau7jqDHZ5c/2.jpg"></a>
 				</div>
 				<div class="menu_bottom"></div>
 			</div>
-		
-	
+			<div style="margin-top: 20px;"><img width="200" src="images/reward.jpg" /></div>

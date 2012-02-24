@@ -1,7 +1,7 @@
 <%
 	dim conn   
 	dim connstr
-	connstr = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath("..\db\dynacom.mdb")
+	connstr = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Server.MapPath("..\db\dynacom.mdb")
 	set conn=server.createobject("ADODB.CONNECTION")
 	if err.number<>0 then 
 		err.clear

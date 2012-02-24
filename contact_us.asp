@@ -1,4 +1,4 @@
-<!--#include file="conn.asp" -->
+<!--#include file="conn_access.asp" -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,7 +36,7 @@ $(document).ready(function(){
 		
 		<div id="ibody">
 			<div id="left_col">
-				<!--#include file="inc/left.inc" -->			
+				<!--#include file="inc/left_new.inc" -->			
 			</div>
 			<div id="main_col">
 				<div id="contact_info">
@@ -52,11 +52,11 @@ $(document).ready(function(){
 						
 						<li>
 							<strong>East Coast Warehouse</strong><br />
-							5573 Highway 70 West <br />
-							Marion, NC 28752<br />
-							Tel:828-724-1305<br />
-							Fax:828-724-1307<br />
-							Email:<a href="mailto:sales@aeintl.biz">sales@aeintl.biz</a>				
+							435 Brook Ave., Unit 2 <br />
+							Deerpark, NY 11729<br />
+							Tel:631-940-9210<br />
+							Fax:631-940-9211<br />
+											
 						</li>
 							
 						
