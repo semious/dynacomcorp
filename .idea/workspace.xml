@@ -22,20 +22,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dynacom.asp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynacom.asp">
+      <file leaf-file-name="product.asp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/product.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="53" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="298" column="48" selection-start="14104" selection-end="14104" vertical-scroll-proportion="0.74319065">
+              <folding>
+                <element signature="tag#td#0;tag#tr#0;tag#table#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prototype.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/prototype.css">
+      <file leaf-file-name="product_edit.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/product_edit.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="23" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.039426524">
-              <folding />
+            <state line="90" column="147" selection-start="2679" selection-end="2679" vertical-scroll-proportion="-40.677418">
+              <folding>
+                <element signature="e#1126#1284#0" expanded="false" />
+                <element signature="e#1310#2076#0" expanded="false" />
+                <element signature="tag#table#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#p#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#1;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#2;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#3;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#4;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#5;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#6;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#7;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#8;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#9;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#10;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#td#3;tag#tr#10;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#select#0;tag#div#0;tag#td#3;tag#tr#10;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#11;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#12;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#td#1;tag#tr#12;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#13;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#td#0;tag#tr#13;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_add.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/product_add.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="155" column="62" selection-start="4657" selection-end="4657" vertical-scroll-proportion="-6.612903">
+              <folding>
+                <element signature="tag#thead#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#th#0;tag#thead#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#0;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#1;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#2;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#3;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#4;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#tr#5;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#select#0;tag#td#0;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#select#1;tag#td#0;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#td#1;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#select#0;tag#td#1;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,16 +92,16 @@
       <file leaf-file-name="left_new.inc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="89" selection-start="4440" selection-end="4440" vertical-scroll-proportion="0.0">
+            <state line="132" column="205" selection-start="4371" selection-end="4556" vertical-scroll-proportion="-9.4838705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="product_add2.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/product_add2.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="365" column="0" selection-start="5588" selection-end="5746" vertical-scroll-proportion="0.0">
+            <state line="151" column="9" selection-start="4841" selection-end="4841" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,6 +127,10 @@
         <option value="$PROJECT_DIR$/dynacom.asp" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/prototype.css" />
+        <option value="$PROJECT_DIR$/admin/product_add2.asp" />
+        <option value="$PROJECT_DIR$/admin/product_edit.asp" />
+        <option value="$PROJECT_DIR$/admin/product_add.asp" />
+        <option value="$PROJECT_DIR$/product.asp" />
       </list>
     </option>
   </component>
@@ -114,7 +167,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,7 +181,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dynacom - Copy" />
+              <option name="myItemId" value="dynacomcorp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -139,21 +191,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dynacom - Copy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynacom - Copy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynacom - Copy" />
+              <option name="myItemId" value="dynacomcorp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -161,22 +199,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynacom - Copy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynacom - Copy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,14 +247,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26327768" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2723824" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -326,31 +351,100 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="365" column="0" selection-start="5588" selection-end="5746" vertical-scroll-proportion="0.039426524" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynacom.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="53" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="1179" selection-end="1179" vertical-scroll-proportion="-9.225806" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/prototype.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="23" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/left with cross sheets.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="365" selection-end="365" vertical-scroll-proportion="-3.8793774">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/product_edit.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="147" selection-start="2679" selection-end="2679" vertical-scroll-proportion="-40.677418">
+          <folding>
+            <element signature="e#1126#1284#0" expanded="false" />
+            <element signature="e#1310#2076#0" expanded="false" />
+            <element signature="tag#table#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#p#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#1;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#4;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#5;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#6;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#7;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#8;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#9;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#10;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#td#3;tag#tr#10;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#select#0;tag#div#0;tag#td#3;tag#tr#10;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#11;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#12;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#td#1;tag#tr#12;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#13;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#td#0;tag#tr#13;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/product_add2.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="9" selection-start="4841" selection-end="4841" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/product_add.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="62" selection-start="4657" selection-end="4657" vertical-scroll-proportion="-6.612903">
+          <folding>
+            <element signature="tag#thead#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#th#0;tag#thead#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#0;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#1;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#2;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#3;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#4;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#tr#5;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#select#0;tag#td#0;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#select#1;tag#td#0;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#td#1;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#select#0;tag#td#1;tag#tr#6;tag#tbody#0;tag#table#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="89" selection-start="4440" selection-end="4440" vertical-scroll-proportion="0.0">
+        <state line="132" column="205" selection-start="4371" selection-end="4556" vertical-scroll-proportion="-9.4838705">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/product.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="365" column="0" selection-start="5588" selection-end="5746" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/prototype.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="23" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.039426524">
-          <folding />
+        <state line="298" column="48" selection-start="14104" selection-end="14104" vertical-scroll-proportion="0.74319065">
+          <folding>
+            <element signature="tag#td#0;tag#tr#0;tag#table#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

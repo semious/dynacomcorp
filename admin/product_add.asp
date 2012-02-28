@@ -126,7 +126,8 @@ function validate(){
 				set rs=server.createobject("adodb.recordset")
 				rs.open "select * from cat where rank = '2'",conn
 				if not rs.eof then
-					%><select name="menu1" style="width:150px;"><%
+				%>
+					<select disabled="disabled" name="menu1" style="width:150px;"><%
 					while not rs.eof 
 						%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
 						rs.movenext
@@ -140,41 +141,52 @@ function validate(){
 				<%
 				rs.open "select * from cat where rank = '2'",conn
 				if not rs.eof then
-					%><select name="menu2" style="width:150px;"><%
+				%>
+				    <select disabled="disabled" name="menu2" style="width:150px;"><%
 					while not rs.eof 
 						%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
 						rs.movenext
 					wend
-					%><option value=" " selected="selected">   </option></select><%
+					%><option value=" " selected="selected">   </option></select>
+				<%
 				end if
 				rs.close
 				%>
 				</td>
-				<td colspan="2" style="border:1px #000000 solid;">
-					related menu3(opt.):
+				<td colspan="2" style="border:1px #000 solid;">
+					related product1(opt.):
 					<%
-					rs.open "select * from cat where rank = '2'",conn
+					rs.open "select * from product order by name",conn
 					if not rs.eof then
-						%><select name="menu3" style="width:150px;"><%
+					%>
+						<select name="menu3" style="width:150px;"><%
 						while not rs.eof 
 							%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
 							rs.movenext
 						wend
-						%><option value=" " selected="selected">   </option></select><%
+						%><option value=" " selected="selected">   </option></select>
+					<%
 					end if
 					rs.close
 					%>
 					<br />
-					related menu4(opt.):
+					related product2(opt.):
 					<%
-					rs.open "select * from cat where rank = '2'",conn
+					rs.open "select * from product order by name",conn
 					if not rs.eof then
-						%><select name="menu4" style="width:150px;"><%
+					%>
+					    <select name="menu4" style="width:150px;">
+					<%
 						while not rs.eof 
-							%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
-							rs.movenext
+					%>
+					    <option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option>
+					<%
+						rs.movenext
 						wend
-						%><option value=" " selected="selected">   </option></select><%
+					%>
+					    <option value=" " selected="selected">   </option>
+					</select>
+					<%
 					end if
 					rs.close
 					%>

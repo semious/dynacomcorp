@@ -44,22 +44,22 @@ set rs2=server.createobject("adodb.recordset")
 color="|"+bk+"|"+wh+"|"+al+"|"+bl+"|"+gn+"|"+gy+"|"+iv+"|"+orange+"|"+rd+"|"+yl+"|"+pr+"|"
 
 if name="" then
-	response.Write("<script>alert('sorry£¬you must input name ');history.back(-1);</script>")
+	response.Write("<script>alert('sorry!!you must input name ');history.back(-1);</script>")
 	response.End()
 end if
 
 if des="" then
-	response.Write("<script>alert('sorry£¬you must input description ');history.back(-1);</script>")
+	response.Write("<script>alert('sorry!!you must input description ');history.back(-1);</script>")
 	response.End()
 end if
 
 if pic1="" then
-	response.Write("<script>alert('sorry£¬you must input a picture at least');history.back(-1);</script>")
+	response.Write("<script>alert('sorry!!you must input a picture at least');history.back(-1);</script>")
 	response.End()
 end if
 
 if pdf="" then
-	response.Write("<script>alert('sorry£¬you must input pdf name ');history.back(-1);</script>")
+	response.Write("<script>alert('sorry!!you must input pdf name ');history.back(-1);</script>")
 	response.End()
 end if
 
@@ -73,24 +73,23 @@ if edit = "editsave" then
 	pq=replace(pq,"'","''")
 	pdf=replace(pdf,"'","''")
 
-
 	rs1.open "select * from product where name='"+name+"' and id <> "+id+"",conn
 	if not rs1.eof then
-		response.write"<script>alert('sorry£¬the name has been used£¡Please choose another name£¡');history.back(-1);</script>"
+		response.write"<script>alert('sorry!the name has been used!Please choose another name!');history.back(-1);</script>"
 		response.end
 	end if
 	rs1.close
 	
 	rs1.open "select * from product where des='"+escape(des)+"' and id <> "+id+"",conn
 	if not rs1.eof then
-		response.write"<script>alert('soory£¬the description has been used£¡Please choose another description£¡');history.back(-1);</script>"
+		response.write"<script>alert('soory!the description has been used!Please choose another description!');history.back(-1);</script>"
 		response.end
 	end if
 	rs1.close
 
 	rs1.open "select * from product where pdf='"+pdf+"' and id <> "+id+"",conn
 	if not rs1.eof then
-		response.write"<script>alert('soory£¬the pdf name has been used£¡Please choose another pdf name£¡');history.back(-1);</script>"
+		response.write"<script>alert('soory!the pdf name has been used!Please choose another pdf name!');history.back(-1);</script>"
 		response.end
 	end if
 	rs1.close
@@ -124,21 +123,21 @@ end if
 
 rs1.open "select * from product where name='"&replace(name,"'","''")&"'",conn
 if not rs1.eof then
-	response.write"<script>alert('sorry£¬the name has been used£¡Please choose another name£¡');history.back(-1);</script>"
+	response.write"<script>alert('sorry!the name has been used!Please choose another name!');history.back(-1);</script>"
 	response.end
 end if
 rs1.close
 
 rs1.open "select * from product where des='"&replace(des,"'","''")&"'",conn
 if not rs1.eof then
-	response.write"<script>alert('soory£¬the description has been used£¡Please choose another description£¡');history.back(-1);</script>"
+	response.write"<script>alert('soory!the description has been used!Please choose another description!');history.back(-1);</script>"
 	response.end
 end if
 rs1.close
 
 rs1.open "select * from product where s_des='"&replace(s_des,"'","''")&"'",conn
 if not rs1.eof then
-	response.write"<script>alert('soory£¬the short description has been used£¡Please choose another description£¡');history.back(-1);</script>"
+	response.write"<script>alert('soory!the short description has been used!Please choose another description!');history.back(-1);</script>"
 	response.end
 end if
 rs1.close
@@ -151,8 +150,6 @@ else
 	maxid = 1
 end if
 rs1.close
-
-
 	sql="select top 1 * from product"
 	rs.open sql,conn,1,3
 	if not rs.eof then

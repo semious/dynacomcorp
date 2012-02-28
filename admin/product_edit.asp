@@ -25,7 +25,7 @@ id=trim(cstr(request("id")))
 if edit = "delete" then
 	rs.open "select * from cat where p_id like '%|"+id+"|%'",conn
 	if not rs.eof then
-		response.Write("<script>alert('sorry£¬a menu named "+trim(cstr(rs("name")))+" has this product which you want to delete,so you must remove this product from this menu first£¡');history.back(-1);</script>")
+		response.Write("<script>alert('sorry!a menu named "+trim(cstr(rs("name")))+" has this product which you want to delete,so you must remove this product from this menu first!');history.back(-1);</script>")
 		response.End()
 	else
 		sql = "delete from product where id = " & id
@@ -38,34 +38,34 @@ end if
 
 %> 
 <script language="javascript">
-function confirmDel(id,page){
-if (confirm("Are you sure?")){
-	window.location.href = "product_edit.asp?action=delete&id=" + id+ "&page="+page ;
-  	}
-}
-function checkdata() {
-     if (document.DocForm.name.value.length ==0 ) {
-       alert("part_num should not be left blank!")
-       document.DocForm.name.focus()
-       return false;
-      }
-     if (document.DocForm.des.value.length ==0) {
-       alert("description should not be left blank!")
-       document.DocForm.des.focus()
-       return false;
-      }
-     if (document.DocForm.pic1.value.length ==0 ) {
-       alert("You must have a picture at least!")
-       document.DocForm.pic1.focus()
-       return false;
-      }
-     if (document.DocForm.pdf.value.length ==0) {
-       alert("Lack of a pdf file!")
-       document.DocForm.pdf.focus()
-       return false;
-      }
-     return true;
-}
+    function confirmDel(id,page){
+        if (confirm("Are you sure?")){
+            window.location.href = "product_edit.asp?action=delete&id=" + id+ "&page="+page ;
+            }
+        }
+    function checkdata() {
+         if (document.DocForm.name.value.length ==0 ) {
+           alert("part_num should not be left blank!")
+           document.DocForm.name.focus()
+           return false;
+          }
+         if (document.DocForm.des.value.length ==0) {
+           alert("description should not be left blank!")
+           document.DocForm.des.focus()
+           return false;
+          }
+         if (document.DocForm.pic1.value.length ==0 ) {
+           alert("You must have a picture at least!")
+           document.DocForm.pic1.focus()
+           return false;
+          }
+         if (document.DocForm.pdf.value.length ==0) {
+           alert("Lack of a pdf file!")
+           document.DocForm.pdf.focus()
+           return false;
+          }
+         return true;
+    }
 //window.onload = function(){
 ////	document.forms[0]["des"].value = unescape(document.forms[0]["des"].value);
 //}
@@ -124,15 +124,14 @@ function checkdata() {
             	<p align="center"><a href="../product.asp?pid=<%=rs("id")%>" target="_blank">View</a> 
           	</td>
         </tr>
- 
-      <%
-			rs.movenext
-			if rs.eof then       
-				i = i + 1              
-				exit for               
-			end if                      
-		next
-%> 
+        <%
+        rs.movenext
+            if rs.eof then
+                i = i + 1
+                exit for
+            end if
+        next
+        %>
 	</table> 
 </div>
 <p>
@@ -155,12 +154,12 @@ function checkdata() {
 			<td width="15%"></td>
 			<td width="35%"></td>		
 		</tr>
-      <tr align="center"> 
-        <td colspan="4" height="20" style="border:1px solid #000000; background-color:FEEC85"> 
+        <tr align="center">
+        <td colspan="4" height="20" style="border:1px solid #000000; background-color:#FEEC85">
           <div align="center"><font color="#FF0000"><b>Detail Information</b></font></div> 
         </td>
       </tr>
-      <tr align="center"> 
+        <tr align="center">
         <td width="110" style="border:1px solid #000000"> 
           	<div align="right">Part_Number:</div>
         </td>
@@ -168,7 +167,7 @@ function checkdata() {
 			<div align="left"><input name="name" value="<%=fs("name")%>" size="60" maxlength="50" /></div>
         </td>
       </tr>
-	   <tr>
+	    <tr>
 		<td width="94" style="border:1px solid #000000"> 
           <div align="right">Description:</div>
         </td>
@@ -176,7 +175,7 @@ function checkdata() {
           	<div align="left"><textarea name="des" cols="60" rows="1"><%=unescape(fs("des"))%></textarea></div>
         </td>
       </tr>
-	   <tr>
+	    <tr>
 		<td width="94" style="border:1px solid #000000"> 
           <div align="right">Short Desc.:</div>
         </td>
@@ -184,7 +183,7 @@ function checkdata() {
           	<div align="left"><textarea name="s_des" cols="60" rows="1"><%=fs("s_des")%></textarea></div>
         </td>
       </tr>
-      <tr> 
+        <tr>
 		<td width="110" style="border:1px solid #000000"> 
 			  <div align="right">Picture1:</div>
 		</td>
@@ -198,7 +197,7 @@ function checkdata() {
           <div align="left"><input name="pic2" value="<%=fs("pic2")%>" size="20" maxlength="50" /></div>
         </td>
       </tr>
-      <tr> 
+        <tr>
         <td width="110" style="border:1px solid #000000"> 
           <div align="right">Picture3:</div>
         </td>
@@ -212,7 +211,7 @@ function checkdata() {
           <div align="left"><input name="pic4" value="<%=fs("pic4")%>" size="20" maxlength="50" /></div>
         </td>
       </tr>
-      <tr> 
+        <tr>
         <td width="110" style="border:1px solid #000000"> 
           <div align="right">Picture5:</div>
         </td>
@@ -226,7 +225,7 @@ function checkdata() {
           <div align="left"><input name="pic6" value="<%=fs("pic6")%>" size="20" maxlength="50" /></div>
         </td>
       </tr>
-      <tr> 
+        <tr>
         <td width="110" style="border:1px solid #000000"> 
           <div align="right">Introduction:</div>
         </td>
@@ -256,25 +255,36 @@ function checkdata() {
 			<td style="border:1px solid #000000"> 
 				<div align="right">Menu1:</div>
 			</td>
-			<td style="border:1px solid #000000;padding:0 0 0 10px;"> 
-			  <div align="left">
-				<%
-				rs.open "select * from cat where rank = '2'",conn
-				if not rs.eof then
-					%><select name="menu1" style="width:150px;"><option value=" ">   </option><%
-					while not rs.eof
-						if cstr(rs("id"))=cstr(fs("menu1")) then
-							%><option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option><%
-						else
-							%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%							
-						end if
-						rs.movenext
-					wend
-					%></select><%
-				end if
-				rs.close
-				%>			  
-			</td>
+            <td style="border:1px solid #000000;padding:0 0 0 10px;">
+                <div align="left">
+                <%
+                rs.open "select * from cat where rank = '2'",conn
+                if not rs.eof then
+                %>
+                <select disabled="disabled" name="menu1" style="width:150px;">
+                    <option value=" "></option>
+                <%
+                while not rs.eof
+                if cstr(rs("id"))=cstr(fs("menu1")) then
+                %>
+                    <option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option>
+                <%
+                else
+                %>
+                    <option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option>
+                <%
+                end if
+                rs.movenext
+                wend
+                %>
+                </select>
+                <span style="color: red">disabled</span>
+                <%
+                end if
+                rs.close
+                %>
+                </div>
+            </td>
 			<td style="border:1px solid #000000"> 
 			  <div align="right">Menu2:</div>
 			</td>
@@ -283,7 +293,8 @@ function checkdata() {
 				<%
 				rs.open "select * from cat where rank = '2'",conn
 				if not rs.eof then
-					%><select name="menu2" style="width:150px;"><option value=" ">   </option><%
+				%>
+				<select disabled="disabled" name="menu2" style="width:150px;"><option value=" ">   </option><%
 					while not rs.eof
 						if cstr(rs("id"))=cstr(fs("menu2")) then
 							%><option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option><%
@@ -292,7 +303,10 @@ function checkdata() {
 						end if
 						rs.movenext
 					wend
-					%></select><%
+					%>
+				</select>
+				<span style="color: red">disabled</span>
+				<%
 				end if
 				rs.close
 				%>			  
@@ -301,14 +315,17 @@ function checkdata() {
 		</tr>   
 	  	<tr>
 			<td style="border:1px solid #000000"> 
-				<div align="right">Menu3:</div>
+				<div align="right">Product1:</div>
 			</td>
-			<td style="border:1px solid #000000;padding:0 0 0 10px;"> 
+			<td style="border:1px solid #000;padding:0 0 0 10px;">
 			  <div align="left">
 				<%
-				rs.open "select * from cat where rank = '2'",conn
+				rs.open "select * from product order by name",conn
 				if not rs.eof then
-					%><select name="menu3" style="width:150px;"><option value=" ">   </option><%
+				%>
+				<select name="menu3" style="width:150px;">
+				    <option value=" ">   </option>
+				    <%
 					while not rs.eof
 						if cstr(rs("id"))=cstr(fs("menu3")) then
 							%><option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option><%
@@ -317,7 +334,9 @@ function checkdata() {
 						end if						
 						rs.movenext
 					wend
-					%></select><%
+					%>
+				</select>
+				<%
 				end if
 				rs.close
 				%>			  
@@ -329,20 +348,25 @@ function checkdata() {
 			<td style="border:1px solid #000000;padding:0 0 0 10px;"> 
 			  <div align="left">
 				<%
-				rs.open "select * from cat where rank = '2'",conn
+				rs.open "select * from product order by name",conn
 				if not rs.eof then
-					%><select name="menu4" style="width:150px;"><option value=" ">   </option><%
-					while not rs.eof
-						if cstr(rs("id"))=cstr(fs("menu4")) then
-							%><option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option><%
-						else
-							%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%	
-						end if						
-						rs.movenext
-					wend
-					%></select><%
-				end if
-				rs.close
+				%>
+				<select name="menu4" style="width:150px;">
+					<option value=" ">   </option>
+				<%
+                while not rs.eof
+                    if cstr(rs("id"))=cstr(fs("menu4")) then
+                        %><option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option><%
+                    else
+                        %><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
+                    end if
+                    rs.movenext
+                wend
+				%>
+				</select>
+				<%
+                    end if
+                    rs.close
 				%>			  
 			  </div>
 			</td>
@@ -458,11 +482,10 @@ function checkdata() {
 							<%
 						end if
 					%>
-</div>
+                </div>
 			</td>
-		</tr>   
-
-      <tr> 
+		</tr>
+        <tr>
         <td colspan="4" width="664"> 
           <div align="center"> 
             <input type="hidden" name="action" value="editsave">
@@ -474,9 +497,7 @@ function checkdata() {
       </tr>
     </table>
 </form>
-</div> 
- 
+</div>
 <%end if%>
-
 </body>
 </html>

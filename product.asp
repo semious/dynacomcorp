@@ -246,9 +246,8 @@ function goUrl(obj){
 			</div>
 				</td>
 				<td width="220" valign="top">
-					<div align="center">
+					<div align="center" style="position:relative;">
 						<br />
-						<ul>
 						<%
 						if len(pid) = 0 then
 							temp = -9999
@@ -263,35 +262,44 @@ function goUrl(obj){
 							if rs1("menu1")<>"" then
 								rs2.open "select * from cat where id="+cstr(rs1("menu1"))+"",conn
 								if not rs2.eof then
-										%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=rs2("pic")%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+						            %><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=rs2("pic")%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+							        %><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
 							if rs1("menu2")<>"" then
 								rs2.open "select * from cat where id="+cstr(rs1("menu2"))+"",conn
 								if not rs2.eof then
-										%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
-									end if
+									%><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+								end if
 								rs2.close
 							end if
 							if rs1("menu3")<>"" then
-								rs2.open "select * from cat where id="+cstr(rs1("menu3"))+"",conn
+								rs2.open "select * from product where id="+cstr(rs1("menu3"))+"",conn
 								if not rs2.eof then
-										%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
 									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
 							if rs1("menu4")<>"" then
-								rs2.open "select * from cat where id="+cstr(rs1("menu4"))+"",conn
+								rs2.open "select * from product where id="+cstr(rs1("menu4"))+"",conn
 								if not rs2.eof then
-										%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
 									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
+							%>
+                            <h4>Related Video</h4>
+                            <div style="position: relative; margin-top: 10px; left: -5px;">
+                                <a href="http://youtu.be/wau7jqDHZ5c" target="_blank">
+                                    <span class="video_play" style="top:50px; left: 70px"></span>
+                                    <img style="border-radius: 5px;" width="180" src="http://img.youtube.com/vi/wau7jqDHZ5c/2.jpg">
+                                </a>
+                            </div>
+							<%
 						end if
 						rs1.close
 						conn.close
@@ -300,7 +308,6 @@ function goUrl(obj){
 						set rs3=nothing
 						set conn=nothing
 						%>
-						</ul>
 					</div>
 				</td>
 			</tr>
@@ -312,7 +319,6 @@ function goUrl(obj){
 	
 	<div id="footer">
 		<!--#include file="inc/footer.inc" -->			
-	</div>
 	</div>
 </body>
 </html>
