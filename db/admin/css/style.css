@@ -1,0 +1,39 @@
+a {
+	text-decoration:none;
+	color:#000000;
+}
+	
+a:hover {
+	text-decoration:underline;
+	color:CC0000;
+}
+
+ul{
+	width:200px;
+	margin:10px 0px 0px 20px;
+	padding:0px;
+}
+
+li{
+	list-style-type:none;
+	font-weight:bold;
+}
+
+li ul{
+	margin:0px 0px 0px 15px;
+	padding:5px 0px 0px 15px ;
+}
+
+li ul li{
+	list-style-image:url(../../images/bullet.gif);
+	font-size:14px;
+	padding:0px;
+	margin:0px;
+	font-weight:100;
+
+}
+
+td{
+	border:0 0 0 0;
+	text-align:center;
+}

@@ -127,7 +127,7 @@ function validate(){
 				rs.open "select * from cat where rank = '2'",conn
 				if not rs.eof then
 				%>
-					<select disabled="disabled" name="menu1" style="width:150px;"><%
+					<select name="menu1" style="width:150px;"><%
 					while not rs.eof 
 						%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
 						rs.movenext
@@ -142,7 +142,7 @@ function validate(){
 				rs.open "select * from cat where rank = '2'",conn
 				if not rs.eof then
 				%>
-				    <select disabled="disabled" name="menu2" style="width:150px;"><%
+				    <select name="menu2" style="width:150px;"><%
 					while not rs.eof 
 						%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
 						rs.movenext

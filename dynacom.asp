@@ -37,9 +37,10 @@ Dynacom - Affordable Quailty Network Cabling Products
 				        <li class="slide_show_item">
 				            <img src="images/slideshow_demo1.jpg" />
 				        </li>
-				        <li class="slide_show_item"><img src="images/slideshow_demo2.jpg" /></li>
+				        <li class="slide_show_item"><a href="product.asp?id=XXXX" target="_blank"><img src="images/slideshow_demo2.jpg" /></a></li>
 				        <li class="slide_show_item"><img src="images/slideshow_demo3.jpg" /></li>
-				        <li class="slide_show_item"><img src="images/slideshow_demo1.jpg" /></li>
+				        <li class="slide_show_item"><img src="images/slideshow_demo2.jpg" /></li>      
+						<li class="slide_show_item"><img src="images/slideshow_demo1.jpg" /></li>
 				    </ul>
 			    </div>
 			</div>
@@ -62,10 +63,10 @@ Dynacom - Affordable Quailty Network Cabling Products
         window.setTimeout(function(){
             var size = $('.slide_show_item').length;
             count = count>=size?0:count;
-            $('.slide_show_item').eq(count-1).fadeOut();
+            $('.slide_show_item').eq(count-1).fadeOut("slow");
             $('.slide_show_item').eq(count).fadeIn("slow");
             startSlideShow(++count);
-         },3000);
+         },5000);
     }
 </script>
 </body>

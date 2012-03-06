@@ -1,0 +1,193 @@
+<!--#include file="IsAdmin.asp" -->
+<!--#include file="conn.asp" -->
+
+<html>
+<head>
+<title>Add New Product</title>
+<link rel="stylesheet" href="css/style.css">
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<script type="text/javascript" language="javascript">
+function selPic(_obj){
+	document.getElementById("pic_a").href=_obj.src;
+	document.getElementById("pic_src").src=_obj.src;
+	document.getElementById("pic_src").alt=_obj.alt;
+}
+function validate(){
+	alert();
+	return false;
+}
+
+</script>
+</head>
+
+<body>
+<form method="post" action="product_add2.asp" >
+	<table cellspacing="0" bordercolor="#000000" cellpadding="2" style="margin:30px 0 0 0;" border="1" align="center" width="90%">
+		<thead>
+			<th colspan="4" bgcolor="#FFFFCC" style="border:1px #000000 solid">
+				Add New Product
+			</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td width="20%"></td>
+				<td width="30%"></td>
+				<td width="30%"></td>
+				<td width="20%"></td>
+			</tr>
+			<tr height="60">
+				<td style="border:1px #000000 solid;">part_num:<br/>
+					<input type="text" name="name" id="name" size="15">
+</td>
+				<td colspan="3" style="border:1px #000000 solid;">
+					description:<br/>
+					<input type="text" name="des" id="des" size="60"><br />
+					short description:<br/>
+					<input type="text" name="s_des" id="s_des" size="60">
+				</td>
+			</tr>
+			<tr>
+				<td style="border:1px #000000 solid;">
+					<p>
+						picture1<br />
+						<input type="text" name="pic1" id="pic1" size="15">
+					</p>
+					<p>
+						picture2(opt.)<br />
+						<input type="text" name="pic2" id="pic2" size="15">					
+					</p>
+					<p>
+						picture3(opt.)<br />
+						<input type="text" name="pic3" id="pic3" size="15">											
+					</p>
+				</td>
+				<td colspan="2" style="border:1px #000000 solid;">
+					picture
+				</td>
+				<td style="border:1px #000000 solid;">
+					<p>
+						picture4(opt.)<br />
+						<input type="text" name="pic4" id="pic4" size="15">
+					</p>
+					<p>
+						picture5(opt.)<br />
+						<input type="text" name="pic5" id="pic5" size="15">					
+					</p>
+					<p>
+						picture6(opt.)<br />
+						<input type="text" name="pic6" id="pic6" size="15">											
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="border:1px #000000 solid;">
+					Introduce:<br />
+					<textarea rows="10" id="intro" cols="60" name="intro"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td style="border:1px #000000 solid;">
+					Pkg. Qty:
+					<input type="text" name="pq" id="pq" size="5">
+				</td>
+				<td style="border:1px #000000 solid;">
+					Video:<input type="text" name="video" id="video" size="15">
+				</td>
+				<td style="border:1px #000000 solid;" colspan="2">
+					Specification:
+					  <input type="text" name="pdf" id="pdf" size="15" />
+				</td>
+			</tr>
+			<tr>
+				<td style="border:1px #000000 solid;">Avaiable Color:</td>
+				<td colspan="3" style="border:1px #000000 solid;">
+				<input type="checkbox" name="bk" id="bk" value="BK">BK|
+				<input type="checkbox" name="wh" id="wh" value="WH">WH|
+				<input type="checkbox" name="pr" id="pr" value="PR">PR|
+				<input type="checkbox" name="bl" id="bl" value="BL">BL|
+				<input type="checkbox" name="al" id="al" value="AL">AL|
+				<input type="checkbox" name="gn" id="gn" value="GN">GN|
+				<input type="checkbox" name="gy" id="gy" value="GY">GY|
+				<input type="checkbox" name="iv" id="iv" value="IV">IV|
+				<input type="checkbox" name="orange" id="or" value="OR">OR|
+				<input type="checkbox" name="rd" id="rd" value="RD">RD|
+				<input type="checkbox" name="yl" id="yl" value="YL">YL
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="border:1px #000000 solid;">
+					related menu1(opt.):
+				<%
+				dim rs
+				dim ary
+				dim ary1
+				dim i
+				dim j
+				set rs=server.createobject("adodb.recordset")
+				rs.open "select * from cat where rank=2",conn
+				if not rs.eof then
+					%><select name="menu1" style="width:150px;"><%
+					while not rs.eof 
+						%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
+						rs.movenext
+					wend
+					%><option value=" " selected="selected">   </option></select><%
+				end if
+				rs.close
+				%>
+					<br />
+					related menu2(opt.):
+				<%
+				rs.open "select * from cat where rank=2",conn
+				if not rs.eof then
+					%><select name="menu2" style="width:150px;"><%
+					while not rs.eof 
+						%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
+						rs.movenext
+					wend
+					%><option value=" " selected="selected">   </option></select><%
+				end if
+				rs.close
+				%>
+				</td>
+				<td colspan="2" style="border:1px #000000 solid;">
+					related menu3(opt.):
+					<%
+					rs.open "select * from cat where rank=2",conn
+					if not rs.eof then
+						%><select name="menu3" style="width:150px;"><%
+						while not rs.eof 
+							%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
+							rs.movenext
+						wend
+						%><option value=" " selected="selected">   </option></select><%
+					end if
+					rs.close
+					%>
+					<br />
+					related menu4(opt.):
+					<%
+					rs.open "select * from cat where rank=2",conn
+					if not rs.eof then
+						%><select name="menu4" style="width:150px;"><%
+						while not rs.eof 
+							%><option value="<%=trim(cstr(rs("id")))%>"><%=rs("name")%></option><%
+							rs.movenext
+						wend
+						%><option value=" " selected="selected">   </option></select><%
+					end if
+					rs.close
+					%>
+				</td>
+			</tr>
+			<tr height="60">
+				<td colspan="4" style="border:1px #000000 solid;">
+					<input type="submit" value="submit" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+</body>
+</html>

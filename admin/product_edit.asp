@@ -261,7 +261,7 @@ end if
                 rs.open "select * from cat where rank = '2'",conn
                 if not rs.eof then
                 %>
-                <select disabled="disabled" name="menu1" style="width:150px;">
+                <select name="menu1" style="width:150px;">
                     <option value=" "></option>
                 <%
                 while not rs.eof
@@ -278,7 +278,6 @@ end if
                 wend
                 %>
                 </select>
-                <span style="color: red">disabled</span>
                 <%
                 end if
                 rs.close
@@ -294,7 +293,7 @@ end if
 				rs.open "select * from cat where rank = '2'",conn
 				if not rs.eof then
 				%>
-				<select disabled="disabled" name="menu2" style="width:150px;"><option value=" ">   </option><%
+				<select name="menu2" style="width:150px;"><option value=" ">   </option><%
 					while not rs.eof
 						if cstr(rs("id"))=cstr(fs("menu2")) then
 							%><option value="<%=trim(cstr(rs("id")))%>" selected="selected"><%=rs("name")%></option><%
@@ -305,7 +304,6 @@ end if
 					wend
 					%>
 				</select>
-				<span style="color: red">disabled</span>
 				<%
 				end if
 				rs.close
@@ -343,7 +341,7 @@ end if
 			  </div>
 			</td>
 			<td style="border:1px solid #000000"> 
-			  <div align="right">Menu4:</div>
+			  <div align="right">Product2:</div>
 			</td>
 			<td style="border:1px solid #000000;padding:0 0 0 10px;"> 
 			  <div align="left">

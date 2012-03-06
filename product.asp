@@ -138,7 +138,7 @@ function goUrl(obj){
 										dim video_a
 										video_a = split(rs1("video"),"|")
 										for i = lbound(video_a) to ubound(video_a)
-										%><a href="javascript:;" class="pic_thumb"><img src="images/<%=trim(video_a(i))%>" width="100" height="75" alt="<%=trim(cstr(video_a(i)))%>" title="Click to enlarge"></a>
+										%><a style="display:none;" href="javascript:;" class="pic_thumb"><img src="images/<%=trim(video_a(i))%>" width="100" height="75" alt="<%=trim(cstr(video_a(i)))%>" title="Click to enlarge"></a>
 										<%
 										next
 									end if
@@ -262,44 +262,47 @@ function goUrl(obj){
 							if rs1("menu1")<>"" then
 								rs2.open "select * from cat where id="+cstr(rs1("menu1"))+"",conn
 								if not rs2.eof then
-						            %><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=rs2("pic")%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-							        %><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+						            %><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=rs2("pic")%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+							        %><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
 							if rs1("menu2")<>"" then
 								rs2.open "select * from cat where id="+cstr(rs1("menu2"))+"",conn
 								if not rs2.eof then
-									%><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a style="display: none;" href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+									%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
 							if rs1("menu3")<>"" then
 								rs2.open "select * from product where id="+cstr(rs1("menu3"))+"",conn
 								if not rs2.eof then
-									%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+									%><a href="product.asp?pid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="product.asp?pid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
 							if rs1("menu4")<>"" then
 								rs2.open "select * from product where id="+cstr(rs1("menu4"))+"",conn
 								if not rs2.eof then
-									%><a href="category.asp?cid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
-									%><a href="category.asp?cid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
+									%><a href="product.asp?pid=<%=rs2("id")%>"><img src="images/<%=cstr(rs2("pic1"))%>" width="75" height="75" alt="<%=cstr(rs2("name"))%>" /></a><br /><%
+									%><a href="product.asp?pid=<%=rs2("id")%>"><%=unescape(cstr(rs2("name")))%></a><p><%
 								end if
 								rs2.close
 							end if
+							if(rs1("video")<>"") then
 							%>
                             <h4>Related Video</h4>
                             <div style="position: relative; margin-top: 10px; left: -5px;">
-                                <a href="http://youtu.be/wau7jqDHZ5c" target="_blank">
+								<iframe width="200" height="135" src="http://www.youtube.com/embed/<%=rs1("video")%>?rel=0" frameborder="0" allowfullscreen></iframe>
+                                <!--<a href="http://youtu.be/<%=rs1("video")%>" target="_blank">
                                     <span class="video_play" style="top:50px; left: 70px"></span>
-                                    <img style="border-radius: 5px;" width="180" src="http://img.youtube.com/vi/wau7jqDHZ5c/2.jpg">
-                                </a>
+                                    <img style="border-radius: 5px;" width="180" src="http://img.youtube.com/vi/<%=rs1("video")%>/2.jpg">
+                                </a>-->
                             </div>
 							<%
+							end if
 						end if
 						rs1.close
 						conn.close
