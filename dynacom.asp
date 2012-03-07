@@ -2,9 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>
-Dynacom - Affordable Quailty Network Cabling Products
-</title>
+<title>Dynacom - Affordable Quailty Network Cabling Products</title>
 <meta name="keywords" content="Dynacom, Wire Management, 110 Cross Connect, Wire, Management, 110, Cross-connect, cross, connect, connections, wire, management, backboard management, residential cabeling, structured wiring, home network management, structured cabling">
 <meta name="description" content="Dynacom, is a manufacturer of Wire Management, 110 Cross Connect, Wire, Management, 110, Cross-connect, wire management, backboard management, residential cabling, structured wiring, home network management, structured cabling for the voice and data industries.">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -59,7 +57,7 @@ Dynacom - Affordable Quailty Network Cabling Products
         startSlideShow(count);
     })();
     function startSlideShow(count){
-        console.log(count);
+//        console.log(count);
         window.setTimeout(function(){
             var size = $('.slide_show_item').length;
             count = count>=size?0:count;

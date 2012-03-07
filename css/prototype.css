@@ -141,8 +141,7 @@ ul {
     background-color: #E9E9E9;
     padding: 0px;
     width: 100%;
-    background-image: url(images/midbg.jpg) right center;
-    background-repeat: no-repeat;
+    background-image: url(images/midbg.jpg) right center no-repeat;
     height: 200px;
 }
 
@@ -472,4 +471,9 @@ a.pic_thumb:hover {
     height: 30px;
     left: 80px;
     top: 60px;
+}
+
+#surveyMonkeyInfo{
+    display: none;
+    position: absolute;
 }

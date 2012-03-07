@@ -11,15 +11,15 @@ $(document).ready(function(){
 		this.blur();
 	});
 	
-	$('input[@type="text"]').focus(function(){
-		$(this).css('backgroundColor','#f4eac5');
-		$(this).css('border','1px solid #7f9db9');
-	});
+//	$('input[@type="text"]').focus(function(){
+//		$(this).css('backgroundColor','#f4eac5');
+//		$(this).css('border','1px solid #7f9db9');
+//	});
 
-	$('input[@type="text"]').blur(function(){
-		$(this).css('backgroundColor','transparent');
-		$(this).css('border','1px solid #7f9db9');
-	});
+//	$('input[@type="text"]').blur(function(){
+//		$(this).css('backgroundColor','transparent');
+//		$(this).css('border','1px solid #7f9db9');
+//	});
 
 	$('.a_show_cat').click(function(){
 		var id = $(this).attr('id');
@@ -63,8 +63,6 @@ $(document).ready(function(){
 	}
 });
 
-
-
 function MoveLayer(layerName){
 //var diff = (document.body.scrollTop + y - document.all.AdLayer.style.posTop)*.40;
 //var y = document.body.scrollTop + y - diff;
@@ -72,5 +70,14 @@ function MoveLayer(layerName){
 //eval("document.all." + layerName + ".style.left = x");//ƶ
 //scroll(500,1000);
 
+}
+
+function popupWindow(){
+    $.blockUI({
+        message:$('#surveyMonkeyInfo'),
+        width:500,
+        height:354
+    });
+//    $.blockUI();
 }
 

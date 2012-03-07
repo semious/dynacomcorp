@@ -1,3 +1,4 @@
+			<script type="text/javascript" src="js/jquery.blockUI.js"></script>
 			<div id="search_frame">
 			    <form action="search.asp">
 				<div id="search">
@@ -86,7 +87,7 @@
 				<div class="menu_main">
 				<ul>
 					<li>
-						<a href="http://www.surveymonkey.com/s/FYD26MZ" target="_blank">Contractor Registration</a>
+						<a href="javascript:popupWindow();void(0);" >Contractor Registration</a>
 					</li>
 					<li>
 						<a href="#">Rewards Program</a>
@@ -130,7 +131,7 @@
 			<div id="menu5" class="menu" style="width:200px;">
 				<div class="search_title">New Products</div>
 				<div class="menu_main" style="text-align: center">
-				<iframe width="200" height="137" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe style="border-radius: 5px;" width="185" height="138" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>
 			        <!--<a href="http://youtu.be/y4fMIodxJjY" target="_blank">
 						<span class="video_play"></span>
 						<img style="border-radius: 5px;" width="180" src="http://img.youtube.com/vi/y4fMIodxJjY/2.jpg">
@@ -139,3 +140,7 @@
 				<div class="menu_bottom"></div>
 			</div>
 			<div style="margin-top: 20px;"><img width="200" src="images/reward.jpg" /></div>
+			<div id="surveyMonkeyInfo">
+			    <div><script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=AtttExmjfgOdZD7qxnbz3w_3d_3d"> </script>
+			    </div>
+			</div>
