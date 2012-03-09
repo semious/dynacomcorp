@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dynacom.asp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dynacom.asp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dynacom.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.29961088">
+            <state line="14" column="19" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -40,10 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prototype.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="prototype.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/prototype.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="477" column="23" selection-start="7315" selection-end="7315" vertical-scroll-proportion="0.0">
+            <state line="475" column="0" selection-start="7254" selection-end="7317" vertical-scroll-proportion="0.6451613">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="186" column="28" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,10 +61,8 @@
       <file leaf-file-name="jquery.blockUI.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery.blockUI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="6" selection-start="2966" selection-end="2966" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="86" column="24" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +71,15 @@
         <entry file="file://$PROJECT_DIR$/js/dynacom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="78" column="18" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left_new.inc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="147" column="83" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,7 +101,6 @@
       <list>
         <option value="$PROJECT_DIR$/conn.asp" />
         <option value="$PROJECT_DIR$/category.asp" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/admin/product_add2.asp" />
         <option value="$PROJECT_DIR$/admin/product_edit.asp" />
         <option value="$PROJECT_DIR$/admin/product_add.asp" />
@@ -93,8 +108,9 @@
         <option value="$PROJECT_DIR$/css/prototype.css" />
         <option value="$PROJECT_DIR$/dynacom.asp" />
         <option value="$PROJECT_DIR$/js/dynacom.js" />
-        <option value="$PROJECT_DIR$/inc/left_new.inc" />
         <option value="$PROJECT_DIR$/js/jquery.blockUI.js" />
+        <option value="$PROJECT_DIR$/inc/left_new.inc" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -225,8 +241,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Errors" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -271,7 +287,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23975721" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24355084" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -338,16 +354,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/product.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="298" column="31" selection-start="14003" selection-end="14003" vertical-scroll-proportion="-7.096774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/product_add2.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="9" selection-start="4841" selection-end="4841" vertical-scroll-proportion="0.040366974" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/left.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.7081711" />
@@ -388,23 +394,31 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynacom.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/about_us.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="28" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/prototype.css">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="477" column="23" selection-start="7315" selection-end="7315" vertical-scroll-proportion="0.0" />
+        <state line="186" column="28" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
+    <entry file="file://$PROJECT_DIR$/js/jquery.blockUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="68" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="86" column="24" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dynacom.js">
@@ -412,18 +426,16 @@
         <state line="78" column="18" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.blockUI.js">
+    <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="6" selection-start="2966" selection-end="2966" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="147" column="83" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynacom.asp">
+    <entry file="file://$PROJECT_DIR$/css/prototype.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.29961088">
+        <state line="475" column="0" selection-start="7254" selection-end="7317" vertical-scroll-proportion="0.6451613">
           <folding />
         </state>
       </provider>

@@ -131,8 +131,10 @@
 			<div id="menu5" class="menu" style="width:200px;">
 				<div class="search_title">New Products</div>
 				<div class="menu_main" style="text-align: center">
-				<iframe style="border-radius: 5px;" width="185" height="138" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>
-			        <!--<a href="http://youtu.be/y4fMIodxJjY" target="_blank">
+				    <div style="border-radius: 5px;margin: 0 auto; background: #000;width: 185px;box-shadow:3px 3px 3px #AAA;">
+				        <iframe width="180" height="135" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>
+			        </div>
+			            <!--<a href="http://youtu.be/y4fMIodxJjY" target="_blank">
 						<span class="video_play"></span>
 						<img style="border-radius: 5px;" width="180" src="http://img.youtube.com/vi/y4fMIodxJjY/2.jpg">
 					</a>-->
@@ -141,6 +143,9 @@
 			</div>
 			<div style="margin-top: 20px;"><img width="200" src="images/reward.jpg" /></div>
 			<div id="surveyMonkeyInfo">
-			    <div><script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=AtttExmjfgOdZD7qxnbz3w_3d_3d"> </script>
+			    <div>
+			        <h1 class="surveyTitle" style="color:#16387C;margin: 3px 0">Contractor Registration</h1>
+			        <a href="javascript:$.unblockUI();void(0);" style="font-size:14px;position:absolute;right: 5px; top:2px;">close</a>
+			        <script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=AtttExmjfgOdZD7qxnbz3w_3d_3d"> </script>
 			    </div>
 			</div>
