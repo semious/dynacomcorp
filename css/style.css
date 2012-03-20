@@ -84,7 +84,7 @@ a:hover {
 
 ul {
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 26px;
 }
 
 li {
@@ -168,7 +168,6 @@ h3 {
     padding: 0;
     background: url(images/menu.gif);
     width: 200px;
-    height: 80px;
 }
 
 .search_title {
@@ -176,29 +175,32 @@ h3 {
     border-bottom: 0 inset #999999;
     font-size: 14px;
     font-weight: bold;
-    height: 18px;
+    height: 16px;
     padding: 2px 0 2px 10px;
-    background: url(images/menu.gif) top center;
+    background: url(images/menu.gif) top left;
+	width:193px;
 }
 
 .menu_main {
     padding: 5px 0 0 0;
     margin: 0;
-    background: url(images/menu_body.gif) right repeat-y;
+    background: url(images/menu_body.gif) left repeat-y;
     width: 200px;
     position: relative;
+	overflow:hidden;
 }
 
 .menu_main li {
-    padding-bottom: 2px;
+    padding: 2px 0;
 }
 
 .menu_bottom {
     padding: 0;
     margin: 0;
     height: 13px;
-    background: url(images/menu.gif) bottom center no-repeat;
+    background: url(images/menu.gif) bottom left no-repeat;
     overflow: hidden;
+	width:200px;
 
 }
 
@@ -347,19 +349,21 @@ a:hover.button {
 
 }
 
-#main_col .slide_show_container {
-    width: 350px;
-    margin-left: 50px;
+.slide_show_container {
+    width: 180px;
+	list-style-type:none;
+	padding-left:0px;
 }
 
 .slide_show_item{
     position: absolute;
-    width: 350px;
+    width: 180px;
+	list-style-type:none;
 }
 
 
-#main_col .slide_show_container img,#main_col .slide_show_container iframe{
-    width: 350px;
+.slide_show_container img,#main_col .slide_show_container iframe{
+    width: 180px;
     border-radius: 5px;
 }
 
