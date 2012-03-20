@@ -3,8 +3,8 @@
 			    <form action="search.asp">
 				<div id="search">
 					<div class="search_title" style="text-align:left">Quick Product Search:</div>
-					<div class="menu_main" style="padding:0 0 0 10px;width:190px;">
-                        <input type="text" size="16" name="words" style="border:1px solid #7f9db9;" />&nbsp;&nbsp;&nbsp;<input type="submit" value="Go!"/>
+					<div class="menu_main" style="padding:5px 0 0 10px;width:186px;">
+                        <input type="text" size="15" name="words" style="border:1px solid #7f9db9;" />&nbsp;&nbsp;&nbsp;<input type="submit" value="Go!"/>
                         <ul style="margin-top:5px;">
                             <li style="margin-left:-7px;"><a href="sheets.asp">Parts Index/Spec. Sheets</a></li>
                         </ul>
@@ -90,10 +90,10 @@
 						<a href="javascript:popupWindow();void(0);" >Contractor Registration</a>
 					</li>
 					<li>
-						<a href="#">Rewards Program</a>
+						<a href="pdf/rewardsprogram.pdf">Rewards Program</a>
 					</li>
 					<li>
-						<a href="#">Like Us <img align="bottom" src="images/likeus.gif"/></a>
+						<a href="http://www.facebook.com/pete.bach" target="_blank">Like Us <img align="bottom" src="images/likeus.gif"/></a>
 					</li>
 				</ul>
 				</div>
@@ -131,8 +131,17 @@
 			<div id="menu5" class="menu" style="width:200px;">
 				<div class="search_title">New Products</div>
 				<div class="menu_main" style="text-align: center">
-				    <div style="border-radius: 5px;margin: 0 auto; background: #000;width: 185px;box-shadow:3px 3px 3px #AAA;">
-				        <iframe width="180" height="135" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>
+				    <div style="margin: 0 auto;width: 170px; height:148px; overflow:hidden">
+					<ul class="slide_show_container">
+				        <li class="slide_show_item">
+				            <img src="images/slideshow_demo1.jpg" />
+				        </li>
+				        <li class="slide_show_item"><a href="product.asp?id=XXXX" target="_blank"><img src="images/slideshow_demo2.jpg" /></a></li>
+				        <li class="slide_show_item"><img src="images/slideshow_demo3.jpg" /></li>
+				        <li class="slide_show_item"><img src="images/slideshow_demo2.jpg" /></li>      
+						<li class="slide_show_item"><img src="images/slideshow_demo1.jpg" /></li>
+				    </ul>
+				        <!--<iframe width="180" height="135" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>-->
 			        </div>
 			            <!--<a href="http://youtu.be/y4fMIodxJjY" target="_blank">
 						<span class="video_play"></span>
@@ -146,6 +155,25 @@
 			    <div>
 			        <h1 class="surveyTitle" style="color:#16387C;margin: 3px 0">Contractor Registration</h1>
 			        <a href="javascript:$.unblockUI();void(0);" style="font-size:14px;position:absolute;right: 5px; top:2px;">close</a>
-			        <script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=AtttExmjfgOdZD7qxnbz3w_3d_3d"> </script>
+			        <script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=AWGgjKu_2bPfqED6EYgQ9Dxg_3d_3d"> </script>
 			    </div>
 			</div>
+		<script type="text/javascript">
+			function initSlideShow(){
+				var count = 0;
+				$('.slide_show_item').hide();
+				$('.slide_show_item').eq(count++).fadeIn();
+				startSlideShow(count);
+			}
+			function startSlideShow(count){
+		//        console.log(count);
+				window.setTimeout(function(){
+					var size = $('.slide_show_item').length;
+					count = count>=size?0:count;
+					$('.slide_show_item').eq(count-1).fadeOut("slow");
+					$('.slide_show_item').eq(count).fadeIn("slow");
+					startSlideShow(++count);
+				 },5000);
+			}
+			initSlideShow();
+		</script>

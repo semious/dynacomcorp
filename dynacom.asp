@@ -27,19 +27,31 @@
 			<div id="left_col"><!--#include file="inc/left_new.inc" --></div>
 			<div id="main_col">
 				<div id="main_pics">
-				    <ul class="slide_show_container">
-                        <li class="slide_show_item">
-                            <!--<iframe width="350" height="208" src="http://www.youtube.com/embed/wau7jqDHZ5c?rel=0" frameborder="0" allowfullscreen></iframe>-->
-                            <a href="http://youtu.be/wau7jqDHZ5c" target="_blank"><span class="video_play_large"></span><img style="border-radius: 5px;" width="350" src="http://img.youtube.com/vi/wau7jqDHZ5c/0.jpg"></a>
-                        </li>
-				        <li class="slide_show_item">
-				            <img src="images/slideshow_demo1.jpg" />
-				        </li>
-				        <li class="slide_show_item"><a href="product.asp?id=XXXX" target="_blank"><img src="images/slideshow_demo2.jpg" /></a></li>
-				        <li class="slide_show_item"><img src="images/slideshow_demo3.jpg" /></li>
-				        <li class="slide_show_item"><img src="images/slideshow_demo2.jpg" /></li>      
-						<li class="slide_show_item"><img src="images/slideshow_demo1.jpg" /></li>
-				    </ul>
+                	<div style="width:350px;font-weight:bold; font-size:12px; text-align:left; font-family:Arial, Helvetica, sans-serif; margin-left:50px;">
+                      <p style="text-align: center"><span lang="en-us">
+                      <font size="5" color="#FF0000">*****Since 1984*****</font></span></p>
+                      <p style="text-align: justify">
+                      <font style="font-size: 12pt">D</font>ynacom<span lang="en-us"> 
+                      Corporation</span> provides <span lang="en-us">voice &amp; </span>
+                      data<span lang="en-us"> connectivity solutions to the 
+                      low-voltage industry throughout North America; we are 
+                      committed to providing quality,&nbsp; value-rich 
+                      structured cabling products that ensure contractors' 
+                      profitability and piece-of-mind.</span>
+                      <p style="text-align: justify">
+                      <span lang="en-us"><font size="3">F</font>rom our 
+                       
+                      design facility in California, our&nbsp; 
+                      engineers develop&nbsp; innovative structured cabling 
+                      products to meet the needs of the ever more competitive 
+                      cabling industry 
+                      and conduct rigid&nbsp; performance tests to assure 
+                      conformity with TIA/EIA standards. </span><p style="text-align: justify">
+                      <span lang="en-us"><font size="3">W</font>ith our 25-Year 
+                      Performance Warranty, Contractor Loyalty Program, and 
+                      Nation-Wide Distribution Network, the Dynacom family is 
+                      your ideal&nbsp; structured cabling  partner.&nbsp;
+                      </span></div>
 			    </div>
 			</div>
 		</div>
@@ -49,23 +61,5 @@
 		</div>
 	</div>
     <p>&nbsp;</p>
-<script type="text/javascript">
-    (function initSlideShow(){
-        var count = 0;
-        $('.slide_show_item').hide();
-        $('.slide_show_item').eq(count++).fadeIn();
-        startSlideShow(count);
-    })();
-    function startSlideShow(count){
-//        console.log(count);
-        window.setTimeout(function(){
-            var size = $('.slide_show_item').length;
-            count = count>=size?0:count;
-            $('.slide_show_item').eq(count-1).fadeOut("slow");
-            $('.slide_show_item').eq(count).fadeIn("slow");
-            startSlideShow(++count);
-         },5000);
-    }
-</script>
 </body>
 </html>
