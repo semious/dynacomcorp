@@ -50,12 +50,12 @@
 	</div>
     <p>&nbsp;</p>
 <script type="text/javascript">
-    (function initSlideShow(){
+    function initSlideShow(){
         var count = 0;
         $('.slide_show_item').hide();
         $('.slide_show_item').eq(count++).fadeIn();
         startSlideShow(count);
-    })();
+    }
     function startSlideShow(count){
 //        console.log(count);
         window.setTimeout(function(){
@@ -66,6 +66,7 @@
             startSlideShow(++count);
          },5000);
     }
+	initSlideShow();
 </script>
 </body>
 </html>
