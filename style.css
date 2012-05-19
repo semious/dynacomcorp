@@ -171,10 +171,10 @@ h3{
 #search_frame{
 	border:0px outset #CCCCCC;
 	margin-left:10px;
+    margin-bottom: 10px;
 	padding:0px;
 	background:url(images/search.gif);
 	width:200px;
-	height:80px;
 }
 
 .search_title{
