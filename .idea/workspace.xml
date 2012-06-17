@@ -29,7 +29,11 @@
       <file leaf-file-name="left_new.inc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="8" column="107" selection-start="574" selection-end="623" vertical-scroll-proportion="0.0">
+=======
+            <state line="478" column="1" selection-start="7317" selection-end="7317" vertical-scroll-proportion="0.8378378">
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
               <folding />
             </state>
           </provider>
@@ -98,8 +102,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -207,6 +211,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Errors" />
+<<<<<<< HEAD
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -215,6 +220,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\mydocument\project\dynacomcorp\js" />
     </key>
+=======
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
   </component>
   <component name="RunManager">
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -259,14 +268,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
+=======
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795234" sideWeight="0.5017123" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25644916" sideWeight="0.48630136" order="0" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24837662" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -365,7 +384,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dynacom.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="78" column="18" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0" />
+=======
+        <state line="14" column="19" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0" />
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.blockUI.js">
@@ -395,6 +418,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/left_new.inc">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="8" column="107" selection-start="574" selection-end="623" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
@@ -406,11 +430,18 @@
     <entry file="file://$PROJECT_DIR$/about_us.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="28" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0" />
+=======
+        <state line="147" column="83" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.0" />
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/prototype.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="464" column="17" selection-start="7101" selection-end="7101" vertical-scroll-proportion="0.29928315">
+=======
+        <state line="478" column="1" selection-start="7317" selection-end="7317" vertical-scroll-proportion="0.8378378">
+>>>>>>> 4847ba0cf9ba59894b28e85baea97427bfcb9947
           <folding />
         </state>
       </provider>
